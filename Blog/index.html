@@ -8,9 +8,104 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut icon" href="./ico.ico" type="image/x-icon">
     <!-- CSS only -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha304-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Barrio&family=Baumans&family=Big+Shoulders+Text:wght@100&family=Bowlby+One&family=Comic+Neue:wght@300&family=Happy+Monkey&family=Kelly+Slab&family=League+Spartan:wght@100;500;700;800;900&family=Limelight&family=Londrina+Shadow&family=Megrim&family=Nova+Flat&family=Poppins:ital,wght@0,300;0,600;0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&family=VT323&display=swap');
+    header {
+        font-family: 'Poppins', sans-serif;
+    }
+    header a {
+        text-decoration: none;
+    }
+
+    header a:hover {
+        color: #ff3030;
+    }
+    .card {
+        border: 1px;
+        /* --bs-card-border-width: 0; */
+    }
+
+    .fab {
+        transform: scale(0.9);
+    }
+
+    .bx {
+      transform: scale(1.4);
+    }
+
+    .circle {
+        justify-content: center;
+        text-align: center;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        background-color: #f4ea30;
+        padding-top: 7.5px;
+        color: #000;
+        visibility: visible;
+    }
+
+    .circle:hover {
+        color: #fff;
+        background-color: #ff3030;
+    }
+
+    .btn.support {
+        background: #f4ea30;
+        border-radius: 22px;
+        width: 14rem;
+        padding: 0.3rem 0.9rem;
+        color: #000;
+        visibility: visible;
+    }
+
+    @media screen and (max-width:767px) {
+        .btn.support {
+        visibility: hidden;
+        }
+
+        .circle {
+            visibility: hidden;
+        }
+    }
+
+    .support:hover {
+        background: #ff3030;
+        border-radius: 22px;
+        color: #fff;
+    }
+
+    .row>* {
+        padding: 0;
+        border: 0;
+    }
+
+    .card-footer {
+        background-color: #fff;
+        border: 0;
+    }
+
+    footer {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        /* position: fixed; */
+    }
+
+    footer a {
+        text-decoration: none;
+        color: #212529;
+    }
+    footer a:hover {
+        color: #ff3030;
+    }
+
+</style>
 <body>
     
 
@@ -69,79 +164,103 @@
 
 
     <!-- CARD 1 -->
-    <div class="row container card-deck mt-5 mb-3 mx-auto">
-        <div class="card mx-auto mb-5" style="width: 30rem;">
+    <div class="row container justify-content-center card-deck mt-5 mb-3 mx-auto">
+        <div class="card mx-4 mb-5" style="width: 35rem;">
           <img class="card-img-top" src="./b2.png" style="height: 23rem;" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Blog title</h5>
+            <i class='bx bxs-heart mx-2' style='color:#ff0000'  ></i>
+            <i class='bx bxs-comment mx-2' style='color:#ff0000' ></i>
+            <i class='bx bxs-share-alt mx-2' style='color:#ff0000' ></i>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+            <i class='bx bxs-user-circle mx-2' style='color:#4b80e5; font-size: 1.4rem; vertical-align: middle;'  ></i>
+            <small class="text-muted">Blog author</small>
           </div>
         </div>
 
-        <div class="card mx-auto mb-5" style="width: 30rem;">
+        <div class="card mx-4 mb-5" style="width: 35rem;">
           <img class="card-img-top" src="./b3.jpg" style="height: 23rem;" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <h5 class="card-title">Blog title</h5>
+            <i class='bx bxs-heart mx-2' style='color:#ff0000'  ></i>
+            <i class='bx bxs-comment mx-2' style='color:#ff0000' ></i>
+            <i class='bx bxs-share-alt mx-2' style='color:#ff0000' ></i>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+            <i class='bx bxs-user-circle mx-2' style='color:#4b80e5; font-size: 1.4rem; vertical-align: middle;'  ></i>
+            <small class="text-muted">Blog author</small>
           </div>
         </div>
       
 
-      <div class="card mx-auto mb-5" style="width: 30rem;">
+      <div class="card mx-4 mb-5" style="width: 35rem;">
         <img class="card-img-top mx-0" src="./b1.jpg" style="height: 23rem;" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">Blog title</h5>
+          <i class='bx bxs-heart mx-2' style='color:#ff0000'  ></i>
+          <i class='bx bxs-comment mx-2' style='color:#ff0000' ></i>
+          <i class='bx bxs-share-alt mx-2' style='color:#ff0000' ></i>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
         <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
+          <i class='bx bxs-user-circle mx-2' style='color:#4b80e5; font-size: 1.4rem; vertical-align: middle;'  ></i>
+          <small class="text-muted">Blog author</small>
         </div>
       </div>
 
-    <div class="card mx-auto mb-5" style="width: 30rem;">
+    <div class="card mx-4 mb-5" style="width: 35rem;">
         <img class="card-img-top mx-0" src="./b2.png" style="height: 23rem;" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">Blog title</h5>
+          <i class='bx bxs-heart mx-2' style='color:#ff0000'  ></i>
+          <i class='bx bxs-comment mx-2' style='color:#ff0000' ></i>
+          <i class='bx bxs-share-alt mx-2' style='color:#ff0000' ></i>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
         <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
+          <i class='bx bxs-user-circle mx-2' style='color:#4b80e5; font-size: 1.4rem; vertical-align: middle;'  ></i>
+          <small class="text-muted">Blog author</small>
         </div>
       </div>
 
-    <div class="card mx-auto mb-5" style="width: 30rem;">
+    <div class="card mx-4 mb-5" style="width: 35rem;">
         <img class="card-img-top mx-0" src="./b3.jpg" style="height: 23rem;" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">Blog title</h5>
+          <i class='bx bxs-heart mx-2' style='color:#ff0000'  ></i>
+          <i class='bx bxs-comment mx-2' style='color:#ff0000' ></i>
+          <i class='bx bxs-share-alt mx-2' style='color:#ff0000' ></i>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
         <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
+          <i class='bx bxs-user-circle mx-2' style='color:#4b80e5; font-size: 1.4rem; vertical-align: middle;'  ></i>
+          <small class="text-muted">Blog author</small>
         </div>
       </div>
 
-    <div class="card mx-auto mb-5" style="width: 30rem;">
+    <div class="card mx-4 mb-5" style="width: 35rem;">
         <img class="card-img-top mx-0" src="./b1.jpg" style="height: 23rem;" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">Blog title</h5>
+          <i class='bx bxs-heart mx-2' style='color:#ff0000'  ></i>
+          <i class='bx bxs-comment mx-2' style='color:#ff0000' ></i>
+          <i class='bx bxs-share-alt mx-2' style='color:#ff0000' ></i>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
         <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
+          <i class='bx bxs-user-circle mx-2' style='color:#4b80e5; font-size: 1.4rem; vertical-align: middle;'  ></i>
+          <small class="text-muted">Blog author</small>
         </div>
-      </div>
     </div>
+  </div>
 
 
 
 
-    <footer class="text-center text-lg-start text-muted" style="background: #acacac; padding-top: 25px;">
+    <footer class="text-center text-lg-start text-muted" style="background: #acacac; padding-top: 25px; width: 100%; border-top: 5px solid #f4ea30;">
     
   
         <!-- Section: Links  -->
@@ -236,5 +355,6 @@
 
 
 
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 </body>
 </html>
