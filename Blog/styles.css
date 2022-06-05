@@ -9,6 +9,10 @@
     header a:hover {
         color: #ff3030;
     }
+    .card {
+        border: 1px;
+        /* --bs-card-border-width: 0; */
+    }
 
     .fab {
         transform: scale(0.9);
